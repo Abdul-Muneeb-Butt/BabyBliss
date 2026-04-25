@@ -643,3 +643,91 @@ h1, h2, h3, h4, h5, h6 {
 .features-cta-wrap {
     margin-top: 44px;
 }
+#cta {
+    background: linear-gradient(135deg, #4b44cc 0%, #6c63ff 50%, #9c8fff 100%);
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+    #cta::before {
+        content: '';
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 50%;
+    }
+
+    #cta::after {
+        content: '';
+        position: absolute;
+        bottom: -80px;
+        right: -40px;
+        width: 250px;
+        height: 250px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 50%;
+    }
+
+.cta-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 14px;
+}
+
+.cta-text {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 32px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-cta-white {
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding: 13px 28px;
+    border-radius: var(--radius-pill);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    margin: 6px 8px;
+}
+
+    .btn-cta-white:hover {
+        background: var(--color-accent);
+        color: var(--color-white);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+.btn-cta-outline {
+    background: transparent;
+    color: var(--color-white);
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    border: 2px solid rgba(255,255,255,0.7);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    margin: 6px 8px;
+}
+
+    .btn-cta-outline:hover {
+        background: rgba(255,255,255,0.15);
+        border-color: var(--color-white);
+        transform: translateY(-2px);
+    }
+ 
