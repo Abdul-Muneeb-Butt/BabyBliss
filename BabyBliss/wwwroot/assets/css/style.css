@@ -1,2 +1,70 @@
-﻿body {
+﻿:root {
+    --color-primary: #6c63ff; /* Purple - main brand color */
+    --color-primary-dark: #4b44cc; /* Darker purple for hover */
+    --color-accent: #ffd166; /* Yellow/Gold - accent color */
+    --color-accent-dark: #f5a623; /* Darker yellow */
+    --color-dark: #1a1a2e; /* Dark navy - headings, footer */
+    --color-dark-footer: #12122a; /* Footer background */
+    --color-light-purple: #f0effe; /* Light purple backgrounds */
+    --color-light-yellow: #fffbeb; /* Light yellow - testimonials */
+    --color-white: #ffffff;
+    --color-light-gray: #f8f9fa;
+    --color-text: #333333;
+    --color-text-muted: #666666;
+    --color-border: #e5e7eb;
+    --color-star: #ffd166;
+    --font-main: 'Poppins', sans-serif;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 50px;
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-btn: 0 4px 14px rgba(108, 99, 255, 0.35);
+    --transition: all 0.3s ease;
+}
+
+/* ---- GLOBAL RESET & BASE ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: var(--color-text);
+    background: var(--color-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-dark);
 }
