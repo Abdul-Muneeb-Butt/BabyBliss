@@ -352,4 +352,40 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.75rem;
     color: var(--color-text-muted);
 }
- 
+#featured {
+    padding: 44px 0;
+    background: var(--color-white);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.featured-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+}
+
+.featured-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    filter: grayscale(100%);
+    opacity: 0.55;
+    transition: var(--transition);
+}
+
+    .featured-logo-item:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+
+.featured-logo-text {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #444;
+    letter-spacing: -0.5px;
+}
